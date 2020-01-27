@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormaZaUklanjanjeTagovaIzStringa", "FormaZaUklanjanjeTagovaIzStringa.csproj", "{94E1BB20-2475-4FC8-80C3-17FAC8C9403B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94E1BB20-2475-4FC8-80C3-17FAC8C9403B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94E1BB20-2475-4FC8-80C3-17FAC8C9403B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94E1BB20-2475-4FC8-80C3-17FAC8C9403B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94E1BB20-2475-4FC8-80C3-17FAC8C9403B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BB0C88E-8E3D-41CD-AD49-181479E1A660}
+	EndGlobalSection
+EndGlobal
