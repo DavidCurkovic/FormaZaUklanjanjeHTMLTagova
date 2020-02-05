@@ -31,13 +31,20 @@ namespace WindowsFormsApp3
         //Add dodaje datoteku spremnu za modifikacije
         private void AddBtn(object sender, EventArgs e)
         {
-            openFileDialog1.ShowDialog();
+            try
+            {
+                openFileDialog1.ShowDialog();
 
-            string filename = openFileDialog1.FileName;
+                string filename = openFileDialog1.FileName;
 
-            FileInfo file = new FileInfo(filename);
+                FileInfo file = new FileInfo(filename);
 
-            AddedTextBox.Text = file.Name;
+                AddedTextBox.Text = file.Name;
+            }
+            catch(ArgumentException)
+            {
+                openFileDialog1.Dispose();
+            }
 
         }
 
@@ -57,8 +64,7 @@ namespace WindowsFormsApp3
             }
 
             else
-                MessageBox.Show("File doesn't exist!");
-
+                MessageBox.Show("Please add a file for delete!");
 
         }
 
@@ -81,10 +87,13 @@ namespace WindowsFormsApp3
                 ReplacedTextBox.Text = file.Name;
             }
 
+            catch (ArgumentException)
+            {
+                MessageBox.Show("Please add a file for replacement!");
+            }
             catch (FileNotFoundException)
             {
                 MessageBox.Show("File doesn't exist!");
-
             }
         }
 
@@ -112,18 +121,15 @@ namespace WindowsFormsApp3
 
                 ReplacedTextBox.Text = file.Name;
                 SavedAsTextBox.Text = file2.Name;
-            }
-
-            catch(FileNotFoundException)
-            {
-                MessageBox.Show("File doesn't exist!");
 
             }
+
+            catch (ArgumentException) { }
+            catch (FileNotFoundException) { }
         }
-
+        
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-
         }
 
         //Clear postavlja prazan sadržaj TextBox-ova osim AddedTextBoxa koji ostaje radi preglednosti datoteka koje su trenutno na modificiranju 
