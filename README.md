@@ -15,5 +15,5 @@ Aplikacija sadrži opcije:
 - spremanje HTML dokumenta bez oznaka
 - spremanje HTML dokumenta bez oznaka u novi dokument
 - prikaz naziva spremljenog dokumenta
-- brisanje unesenog teksta s HTML oznakama unutar forme
-- brisanje naziva HTML dokumenata unutar forme
+- brisanje unesenog teksta s HTML oznakama
+- brisanje naziva HTML dokumenata
